@@ -4,6 +4,11 @@ import Marquee from './components/Marquee'
 import Showcase from './components/Showcase'
 import Logos from './components/Logos'
 import CTA from './components/CTA'
+import CaseStudies from './components/CaseStudies'
+import Process from './components/Process'
+import Pricing from './components/Pricing'
+import Footer from './components/Footer'
+import Stats from './components/Stats'
 
 function App() {
   const grainSvg = `
@@ -23,21 +28,21 @@ function App() {
         <div
           className="absolute inset-0 opacity-[0.15]"
           style={{
-            backgroundImage: `url("data:image/svg+xml;utf8,${encodeURIComponent(grainSvg)}")`,
+            backgroundImage: `url(\"data:image/svg+xml;utf8,${encodeURIComponent(grainSvg)}\")`,
           }}
         />
       </div>
 
       <Navbar />
       <Hero />
+      <Stats />
       <Marquee />
+      <CaseStudies />
       <Showcase />
+      <Pricing />
       <Logos />
       <CTA />
-
-      <footer className="mx-auto max-w-7xl px-6 pb-10 text-center text-xs text-slate-400/80">
-        © {new Date().getFullYear()} Himalaya AI — Kathmandu, Nepal
-      </footer>
+      <Footer />
     </div>
   )
 }
